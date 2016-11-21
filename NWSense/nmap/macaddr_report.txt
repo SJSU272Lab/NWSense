@@ -1,2 +1,0 @@
-Scan at 2016-11-21 13:34:51
-	Found 0 mac addresses:
