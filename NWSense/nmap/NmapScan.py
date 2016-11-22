@@ -33,16 +33,14 @@ def getOnlineHosts():
     #for quick determination of online hosts only do ping scan
     nm.scan(ipAddr,arguments='-sn')
     results = []
+    hosts = nm.all_hosts()
+    hosts.remove(myAddr)
+    hosts.remove(gateW)
     for h in nm.all_hosts():
-        host_mac = ()
+        host_mac = (h,"--:--:--:--:--:--")
         if os.getuid() == 0 and 'mac' in nm[h]['addresses']:
             host_mac = (h,nm[h]['addresses']['mac'])
-        else:
-            host_mac = (h,"--:--:--:--:--:--")
-        if h == myAddr or h == gateW:
-            continue
-        else:
-            results.append(host_mac)
+        results.append(host_mac)
     return results
 
 

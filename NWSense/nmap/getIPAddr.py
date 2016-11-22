@@ -34,6 +34,4 @@ if __name__ == "__main__":
     print (ifconfig.getIP())
     print (ifconfig.getMask())
     print(ifconfig.getDefaultGW())
-    
-
 
