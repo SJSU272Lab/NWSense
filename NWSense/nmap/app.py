@@ -1,4 +1,4 @@
-from NmapScan import getOnlineHosts
+from NmapScan import IPScan
 import datetime
 import getIPAddr
 
@@ -7,17 +7,20 @@ import getIPAddr
 #get registered mac addresses
 registered_macs = [mac.rstrip('\n') for mac in open("registered_mac.txt",'r')]
 
-online_hosts = getOnlineHosts()
-print ('Found %s hosts up:\n' %len(online_hosts))
+ipScan = IPScan()
+online_hosts = ipScan.getOnlineHosts()
+
+print ('Found %s hosts up :\n' %len(online_hosts))
 
 #output to connection_report.txt
 output = open('connection_report.txt','a')
-output.write('Scan at ' +  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n')
-output.write('\tFound %s hosts up:\n' %len(online_hosts))
+output.write('Scan at : ' +  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '.\n')
+output.write('Total time scan : ' + ipScan.getScanTime() + ' seconds.\n' )
+output.write('\tFound %s hosts up :\n' %len(online_hosts))
 
 unregistered = []
 
-output.write('\t\tRegistered devices\n')
+output.write('\t\tRegistered devices :\n')
 for host in online_hosts:
     h = host[0]
     m = host[1]
@@ -27,7 +30,7 @@ for host in online_hosts:
     else:
         unregistered.append(host)
 
-output.write('\t\tSuspicious devices\n')
+output.write('\t\tSuspicious devices :\n')
 print('\n')
 for host in unregistered:
     h = host[0]
