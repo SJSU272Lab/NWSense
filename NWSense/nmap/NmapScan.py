@@ -1,7 +1,5 @@
 import nmap
 from getIPAddr import IFConfig
-import json
-import datetime
 import os
 import re
 
@@ -19,10 +17,17 @@ mask = ""
 if(myMask == '255.255.255.0'):
     pat = r'(\d+\.\d+\.\d+\.)\d+'
     mask = '0/24'
+
+if (myMask == '255.255.0.0'):
+    pat = r'(\d+\.\d+\.)\d+\.\d+'
+    mask = '0.0/16'
+
 r = re.search(pat,myAddr,re.I)
 
 
 ipAddr = r.group(1) + mask
+
+print ipAddr
 
 def getOnlineHosts():
     #for quick determination of online hosts only do ping scan

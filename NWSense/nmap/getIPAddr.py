@@ -31,6 +31,9 @@ class IFConfig():
 
 if __name__ == "__main__":
     ifconfig = IFConfig(None)
+    print (ifconfig.getIP())
+    print (ifconfig.getMask())
     print(ifconfig.getDefaultGW())
+    
 
 

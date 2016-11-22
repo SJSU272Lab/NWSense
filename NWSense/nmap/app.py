@@ -3,6 +3,7 @@ import datetime
 import getIPAddr
 
 
+
 #get registered mac addresses
 registered_macs = [mac.rstrip('\n') for mac in open("registered_mac.txt",'r')]
 
@@ -36,5 +37,4 @@ for host in unregistered:
 
 output.write('\n')
 output.close()
-
 

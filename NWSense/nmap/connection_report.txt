@@ -17,3 +17,47 @@ Scan at 2016-11-21 16:05:06
 			192.168.0.101	:   30:75:12:81:00:99
 			192.168.0.105	:   D0:E7:82:F6:13:3B
 
+Scan at 2016-11-21 16:33:01
+	Found 2 hosts up:
+		Registered devices
+		Suspicious devices
+			192.168.0.100	:   90:B9:31:C6:9F:28
+			192.168.0.105	:   D0:E7:82:F6:13:3B
+
+Scan at 2016-11-21 16:33:33
+	Found 4 hosts up:
+		Registered devices
+			192.168.0.103	:   60:F4:45:77:04:4D
+			192.168.0.107	:   B8:53:AC:C9:CF:25
+		Suspicious devices
+			192.168.0.105	:   D0:E7:82:F6:13:3B
+			192.168.0.106	:   78:4B:87:D1:E1:81
+
+Scan at 2016-11-21 16:34:04
+	Found 3 hosts up:
+		Registered devices
+			192.168.0.107	:   B8:53:AC:C9:CF:25
+		Suspicious devices
+			192.168.0.101	:   30:75:12:81:00:99
+			192.168.0.105	:   D0:E7:82:F6:13:3B
+
+Scan at 2016-11-21 16:36:54
+	Found 1 hosts up:
+		Registered devices
+		Suspicious devices
+			192.168.0.105	:   D0:E7:82:F6:13:3B
+
+Scan at 2016-11-21 17:08:14
+	Found 2 hosts up:
+		Registered devices
+			192.168.0.103	:   60:F4:45:77:04:4D
+		Suspicious devices
+			192.168.0.105	:   D0:E7:82:F6:13:3B
+
+Scan at 2016-11-21 17:08:21
+	Found 2 hosts up:
+		Registered devices
+			192.168.0.103	:   60:F4:45:77:04:4D
+		Suspicious devices
+			192.168.0.105	:   D0:E7:82:F6:13:3B
+
