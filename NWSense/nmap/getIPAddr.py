@@ -28,6 +28,7 @@ class IFConfig():
                 else:
                     break
             return socket.inet_ntoa(struct.pack("<L", int(fields[2], 16)))
+        return None
 
 if __name__ == "__main__":
     ifconfig = IFConfig(None)

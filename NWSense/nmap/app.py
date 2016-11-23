@@ -14,8 +14,9 @@ print ('Found %s hosts up :\n' %len(online_hosts))
 
 #output to connection_report.txt
 output = open('connection_report.txt','a')
-output.write('Scan at : ' +  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '.\n')
-output.write('Total time scan : ' + ipScan.getScanTime() + ' seconds.\n' )
+output.write('Scan at : %s.\n'%(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+elapse = ipScan.getScanTime()
+output.write('\tTotal time scan : %d h : %d minutes : %d seconds.\n'%(elapse) )
 output.write('\tFound %s hosts up :\n' %len(online_hosts))
 
 unregistered = []

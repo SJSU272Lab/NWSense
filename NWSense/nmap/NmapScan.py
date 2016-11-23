@@ -32,8 +32,13 @@ class IPScan():
     def __init__(self):
         self.nm = nmap.PortScanner()
     
-    def getScanTime(self):
+    def getScanTimeSecond(self):
         return self.elapsed_time
+
+    def getScanTime(self):
+        m,s = divmod(self.elapsed_time,60)
+        h,m = divmod(m,60)
+        return (h,m,s)
 
     def getOnlineHosts(self):
         #for quick determination of online hosts only do ping scan
