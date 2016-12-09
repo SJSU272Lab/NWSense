@@ -88,7 +88,7 @@ def getAuthen():
 def sendNotification():
     if request.method == 'POST':
         json_request = json.loads(request.data)
-        userId = json_request['userId']
+        userId = str(json_request['userId'])
 
         if 'suspiciousMacs' in json_request:
             suspiciousMacs = json_request['suspiciousMacs']
@@ -111,7 +111,7 @@ def sendNotification():
         response.status_code = 202
 
         if len(smsMacs) == 0:
-            return reponse
+            return response
 
         if 'phoneNumber' in doc:
             suspiciousMacsBody = "%d new suspicious device(s) have accessed to your home network:\n"%(len(smsMacs))

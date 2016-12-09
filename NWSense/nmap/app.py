@@ -1,11 +1,12 @@
 from NmapScan import IPScan
 import datetime
 import getIPAddr
-
+import config
+import json
 
 
 #get registered mac addresses
-registered_macs = [mac.rstrip('\n') for mac in open("/home/pi/Desktop/Fall16-Team13/NWSense/nmap/registered_mac.txt",'r')]
+registered_macs = [mac.rstrip('\n') for mac in open(config.registered_macs,'r')]
 
 ipScan = IPScan()
 online_hosts = ipScan.getOnlineHosts()
@@ -27,7 +28,18 @@ for host in online_hosts:
     m = host[1]
     if m not in registered_macs:
         unregistered.append(host[1])
-print unregistered
+suspiciousMacs = {}
+suspiciousMacs["userId"] = "b539ab74bc9bc3e43a4b40040a66fa35"
+suspiciousMacs["suspiciousMacs"] = []
+for mac in unregistered:
+    m = {}
+    m["type"] = "unknown"
+    m["addr"] = str(mac)
+    suspiciousMacs["suspiciousMacs"].append(m)
+    
+if len(suspiciousMacs["suspiciousMacs"]) >0:
+    print json.dumps(suspiciousMacs)
+
 #        output.write('\t\t\t'+ h +  "\t:   " + m + '\n')
 #        print ('\t'+ h + '\t:  ' + m + "\t:  registered")
 #        print (m + "\t:  registered")

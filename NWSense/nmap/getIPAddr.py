@@ -1,8 +1,9 @@
 import socket
 import fcntl
 import struct
+import config
 
-default_ifname = 'wlan0'
+default_ifname = config.default_ifname
 
 class IFConfig():
     def __init__(self,ifname):
