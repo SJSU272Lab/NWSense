@@ -1,0 +1,11 @@
+{
+    "id":"i-045a613ee8e986f48",
+    "publicDNS":"ec2-54-165-49-28.compute-1.amazonaws.com",
+    "publicIP":"54.165.49.28",
+    "command":"ssh -i khoanlesjsu.pem ec2-user@ec2-54-165-49-28.compute-1.amazonaws.com",
+    "docker login":"",
+    "docker tag":"docker tag ranjan:latest khoale88/272team",
+    "docker push":"docker push khoale88/272team",
+    "docker pull":"docker pull khoale88/272team"
+    
+}
