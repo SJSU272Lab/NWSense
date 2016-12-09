@@ -13,6 +13,7 @@ try:
   client.connect()
   client.publishCommand('raspberry','b827ebb5fcf3','blockWebs','json',data = {'args':"block_list"})
   client.publishCommand('raspberry','seema','blockWebs','json',data={'args':["aaaaa.com","bbbb.com"]})
+  client.publishCommand('raspberry','amay','blockWebs','json',data={'args':["aaaaa.com","bbbb.com"]})
   client.disconnect()
 except ibmiotf.ConnectionException as e:
   print e

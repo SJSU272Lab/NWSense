@@ -30,7 +30,6 @@ def updateBlockWebs():
         #notify... raspberry
         import ibmiotf.application
         regPis = [pi for pi in doc['regPi']]
-        print regPis
         try:
             client = ibmiotf.application.Client(json.load(open("iotCred.json")))
             client.connect()
@@ -39,7 +38,7 @@ def updateBlockWebs():
                     client.publishCommand(pi['type'],pi['id'],'blockWebs','json',data = {'args':doc['blockWebs']})
             client.disconnect()
         except ibmiotf.ConnectionException as e:
-            print e
+            print (e)
         response = make_response()
         response.status_code = 201
         return response
@@ -48,13 +47,11 @@ def updateBlockWebs():
 def getBlockWebs(userId):
     if request.method == 'GET':
         #userId = str(userId)
-
-        print userId in userDB
         #get blockWebs
         try:
             doc = userDB[userId]
         except Exception as e:
-            print e
+            print (e)
             abort(404)
         blockWebs = {}
         blockWebs['blockWebs'] =  doc['blockWebs']
@@ -66,15 +63,14 @@ def getBlockWebs(userId):
 def getAuthen():
     if request.method == 'GET':
         users = {"users":[]}
-        print 'here'
         for user in userDB:
             usr={}
             usr['email'] = user['authen']['email']
             usr['password'] = user['authen']['password']
             usr['id'] = user['_id']
-            print usr
+            print (usr)
             users['users'].append(usr)
-            print users
+            print (users)
         response = make_response(str(users))
         response.status_code = 200
         return response
