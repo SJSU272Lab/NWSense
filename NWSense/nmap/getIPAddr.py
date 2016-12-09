@@ -2,7 +2,7 @@ import socket
 import fcntl
 import struct
 
-default_ifname = 'wlp2s0'
+default_ifname = 'wlan0'
 
 class IFConfig():
     def __init__(self,ifname):
