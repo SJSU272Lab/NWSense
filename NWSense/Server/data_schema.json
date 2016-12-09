@@ -1,0 +1,56 @@
+{
+    "iot":{
+        "deviceType": "raspberry",
+        "deviceId": "b827ebb5fcf3",
+        "format": "json",
+        "data":{
+            "userId":"",
+            "info":[
+                {
+                    "Id":"device mac",
+                    "Website":[]
+                } 
+            ]
+        }
+    },
+
+    "user":{
+        
+        "format":"json",
+        "registered_devices":[
+            {
+                "deviceType":"raspberry",
+                "deviceId":"b827ebb5fcf3"
+            }
+        ],
+        "authen":{
+            "userName":"khoa.n.le@sjsu.edu",
+            "password":"1234567890"
+        },
+        "BlockMacs":[
+            {
+                "deviceType":"",
+                "deviceMac":""
+            }
+        ],
+        "AllowMacs":[
+            {               
+                "deviceMac":"",
+                "deviceName":"",
+                "deviceOS":[], 
+                "deviceType":"",   
+                "BlockWebs":["instagram.com"]
+            }
+        ],
+        "UnregMacs":[
+            {
+                "deviceType":"",
+                "deviceMac":""
+            }
+        ],
+        "BlockWebs":[
+            "facebook.com",
+            "twitter.com"
+            ]
+    }    
+}
