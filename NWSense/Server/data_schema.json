@@ -17,10 +17,10 @@
     "user":{
         
         "format":"json",
-        "registered_devices":[
+        "regPi":[
             {
-                "deviceType":"raspberry",
-                "deviceId":"b827ebb5fcf3"
+                "type":"raspberry",
+                "id":"b827ebb5fcf3"
             }
         ],
         "authen":{
