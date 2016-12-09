@@ -11,9 +11,9 @@ options = json.load(open("IoTcred.json"))
 try:
   client = ibmiotf.application.Client(options)
   client.connect()
-  client.publishCommand('raspberry','b827ebb5fcf3','blockWebs','json',data = {'args':"block_list"})
-  client.publishCommand('raspberry','seema','blockWebs','json',data={'args':["aaaaa.com","bbbb.com"]})
-  client.publishCommand('raspberry','amay','blockWebs','json',data={'args':["aaaaa.com","bbbb.com"]})
+  client.publishCommand('raspberry','b827ebb5fcf3','unregMacs','json',data = {'args':["block_list","aaaa","bbbb"]})
+  #client.publishCommand('raspberry','seema','blockWebs','json',data={'args':["aaaaa.com","bbbb.com"]})
+  #client.publishCommand('raspberry','amay','blockWebs','json',data={'args':["aaaaa.com","bbbb.com"]})
   client.disconnect()
 except ibmiotf.ConnectionException as e:
   print e
