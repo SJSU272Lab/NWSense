@@ -16,5 +16,4 @@ user = doc['user']
 
 #userDB = client.create_database("user")
 userDB = client['user']
-doc = userDB['96244893e03fc35b3ac4aca5fa77336c']
 userDB.create_document(user)

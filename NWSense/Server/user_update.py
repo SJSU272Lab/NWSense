@@ -7,13 +7,7 @@ client =  Cloudant(credentials['username'],credentials['password'],url = credent
 client.connect()
 print client.all_dbs()
 
-doc = json.load(open("data_schema.json"))
-user = doc['user']
-#userId = 'u'+str(random.getrandbits(128))
-#user['_id'] = userId
-
 
 
 #userDB = client.create_database("user")
 userDB = client['user']
-userDB.create_document(user)

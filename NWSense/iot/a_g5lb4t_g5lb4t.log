@@ -1,0 +1,166 @@
+2016-11-28 22:54:05,877   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:00:01,940   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:00:01,944   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:00:01,944   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.29s
+2016-11-28 23:00:01,944   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:00:01,945   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:01:59,247   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:01:59,252   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:01:59,253   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.31s
+2016-11-28 23:01:59,253   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:01:59,253   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:02:32,029   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:02:32,031   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:02:32,032   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.29s
+2016-11-28 23:02:32,032   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:02:32,032   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:03:17,917   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:03:17,925   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:03:17,926   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.25s
+2016-11-28 23:03:17,926   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:03:17,926   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:04:07,087   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:04:07,095   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:04:07,095   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.25s
+2016-11-28 23:04:07,095   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:04:07,095   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:04:55,037   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:04:55,044   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:04:55,045   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.23s
+2016-11-28 23:04:55,045   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:04:55,045   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:06:05,851   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:06:05,901   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:06:05,901   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.29s
+2016-11-28 23:06:05,901   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:06:05,902   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-11-28 23:06:19,559   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-11-28 23:06:19,566   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-11-28 23:06:19,567   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.24s
+2016-11-28 23:06:19,567   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-11-28 23:06:19,568   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-02 17:38:31,726   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-02 17:38:31,745   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-02 17:38:31,746   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.20s
+2016-12-02 17:38:31,746   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-02 17:38:31,747   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-02 17:44:45,767   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-02 17:44:45,785   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-02 17:44:45,786   ibmiotf.application.Client  INFO    Messages published : 1, life: 8s, rate: 1/8.21s
+2016-12-02 17:44:45,786   ibmiotf.application.Client  INFO    Messages received  : 0, life: 8s, rate: 1/0.00s
+2016-12-02 17:44:45,787   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-02 17:45:14,204   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-02 17:45:14,223   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-02 17:45:14,224   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.19s
+2016-12-02 17:45:14,224   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-02 17:45:14,225   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-02 17:45:43,460   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-02 17:45:43,479   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-02 17:45:43,480   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.20s
+2016-12-02 17:45:43,480   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-02 17:45:43,481   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:11:28,002   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:11:28,008   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:11:28,009   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.32s
+2016-12-08 12:11:28,009   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:11:28,009   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:12:37,922   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:12:37,929   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:12:37,929   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.27s
+2016-12-08 12:12:37,930   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:12:37,930   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:12:57,850   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:12:57,856   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:12:57,857   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.34s
+2016-12-08 12:12:57,858   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:12:57,858   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:13:47,859   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:13:47,864   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:13:47,864   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.24s
+2016-12-08 12:13:47,865   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:13:47,865   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:14:10,154   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:14:10,161   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:14:10,161   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.25s
+2016-12-08 12:14:10,161   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:14:10,162   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:14:33,857   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:14:33,866   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:14:33,866   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.25s
+2016-12-08 12:14:33,867   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:14:33,867   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:14:42,971   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:14:42,978   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:14:42,979   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.25s
+2016-12-08 12:14:42,979   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:14:42,979   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:14:56,385   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:14:56,390   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:14:56,390   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.24s
+2016-12-08 12:14:56,390   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:14:56,391   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:15:13,881   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:15:13,889   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:15:13,889   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.25s
+2016-12-08 12:15:13,890   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 12:15:13,890   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 12:56:23,532   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 12:56:23,539   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 12:56:23,540   ibmiotf.application.Client  INFO    Messages published : 1, life: 1s, rate: 1/0.66s
+2016-12-08 12:56:23,540   ibmiotf.application.Client  INFO    Messages received  : 0, life: 1s, rate: 1/0.00s
+2016-12-08 12:56:23,540   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 15:38:47,129   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 15:38:47,136   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 15:38:47,136   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.30s
+2016-12-08 15:38:47,136   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 15:38:47,137   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 15:46:56,097   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 15:46:56,115   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 15:46:56,116   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.50s
+2016-12-08 15:46:56,116   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 15:46:56,117   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 15:48:15,484   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 15:48:15,515   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 15:48:15,515   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.42s
+2016-12-08 15:48:15,515   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 15:48:15,516   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 15:48:26,543   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 15:48:26,561   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 15:48:26,561   ibmiotf.application.Client  INFO    Messages published : 1, life: 0s, rate: 1/0.49s
+2016-12-08 15:48:26,561   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 15:48:26,562   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:09:46,465   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:09:46,481   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:09:46,481   ibmiotf.application.Client  INFO    Messages published : 2, life: 0s, rate: 1/0.11s
+2016-12-08 16:09:46,481   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 16:09:46,482   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:10:34,248   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:10:34,269   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:10:34,269   ibmiotf.application.Client  INFO    Messages published : 2, life: 3s, rate: 1/1.61s
+2016-12-08 16:10:34,270   ibmiotf.application.Client  INFO    Messages received  : 0, life: 3s, rate: 1/0.00s
+2016-12-08 16:10:34,270   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:15:16,352   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:15:16,371   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:15:16,372   ibmiotf.application.Client  INFO    Messages published : 2, life: 0s, rate: 1/0.10s
+2016-12-08 16:15:16,373   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 16:15:16,373   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:44:40,556   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:44:40,574   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:44:40,574   ibmiotf.application.Client  INFO    Messages published : 2, life: 2s, rate: 1/1.17s
+2016-12-08 16:44:40,575   ibmiotf.application.Client  INFO    Messages received  : 0, life: 2s, rate: 1/0.00s
+2016-12-08 16:44:40,575   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:45:17,390   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:45:17,409   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:45:17,410   ibmiotf.application.Client  INFO    Messages published : 2, life: 0s, rate: 1/0.12s
+2016-12-08 16:45:17,410   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 16:45:17,410   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:49:52,122   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:49:52,139   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:49:52,139   ibmiotf.application.Client  INFO    Messages published : 2, life: 0s, rate: 1/0.11s
+2016-12-08 16:49:52,139   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 16:49:52,140   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform
+2016-12-08 16:49:57,273   ibmiotf.application.Client  INFO    Connected successfully: a:g5lb4t:g5lb4t
+2016-12-08 16:49:57,276   ibmiotf.application.Client  INFO    Disconnected from the IBM Watson IoT Platform
+2016-12-08 16:49:57,276   ibmiotf.application.Client  INFO    Messages published : 2, life: 0s, rate: 1/0.14s
+2016-12-08 16:49:57,276   ibmiotf.application.Client  INFO    Messages received  : 0, life: 0s, rate: 1/0.00s
+2016-12-08 16:49:57,277   ibmiotf.application.Client  INFO    Closed connection to the IBM Watson IoT Platform

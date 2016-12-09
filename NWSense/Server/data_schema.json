@@ -27,13 +27,13 @@
             "userName":"khoa.n.le@sjsu.edu",
             "password":"1234567890"
         },
-        "BlockMacs":[
+        "blockMacs":[
             {
                 "deviceType":"",
                 "deviceMac":""
             }
         ],
-        "AllowMacs":[
+        "allowMacs":[
             {               
                 "deviceMac":"",
                 "deviceName":"",
@@ -42,13 +42,13 @@
                 "BlockWebs":["instagram.com"]
             }
         ],
-        "UnregMacs":[
+        "unregMacs":[
             {
                 "deviceType":"",
                 "deviceMac":""
             }
         ],
-        "BlockWebs":[
+        "blockWebs":[
             "facebook.com",
             "twitter.com"
             ]
