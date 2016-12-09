@@ -1,4 +1,4 @@
-from flask import Flask,redirect, make_response
+from flask import Flask,redirect, make_response, abort
 from flask import render_template
 from flask import request
 import os, json
@@ -13,12 +13,14 @@ client.connect()
 userDB = client['user']
 
 
-@app.route('/update/blockWebs',methods=['POST'])
+@app.route('/update/blockWebs',methods=['PUT'])
 def updateBlockWebs():
-    if request.method == 'POST':
+    if request.method == 'PUT':
         json_request = json.loads(request.data)
         userId = json_request['userId']
-        
+
+        if userId not in userDB:
+            abort(404)
         #update blockWebs
         doc = userDB[userId]
         blockWebs = json_request['blockWebs']
@@ -42,6 +44,24 @@ def updateBlockWebs():
         response.status_code = 201
         return response
 
+@app.route('/getBlockWebs/<string:userId>',methods=['GET'])
+def getBlockWebs(userId):
+    if request.method == 'GET':
+        #userId = str(userId)
+
+        print userId in userDB
+        #get blockWebs
+        try:
+            doc = userDB[userId]
+        except Exception as e:
+            print e
+            abort(404)
+        blockWebs = {}
+        blockWebs['blockWebs'] =  doc['blockWebs']
+        response = make_response(str(blockWebs))
+        response.status_code = 200
+        return response
+
 @app.route('/getAuthen',methods=['GET'])
 def getAuthen():
     if request.method == 'GET':
@@ -58,7 +78,7 @@ def getAuthen():
         response = make_response(str(users))
         response.status_code = 200
         return response
-    
+
 
 
 
