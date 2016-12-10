@@ -63,7 +63,8 @@
 
                         </li>
                         <li><a href='single.html'><span>About</span></a></li>
-                        <li class='last'><a href='login.html'><span>Login</span></a></li>
+                        <li class='last'><a href='login.html'><span id="login">Login</span></a></li>
+
 
                     </ul>
                 </div>
@@ -78,7 +79,7 @@
                 <div id="main-content">
                     <div class="wrap-content" style="padding: 0;">
                         <article>
-                            <div class="col-lg-6">
+                            <div class="col-lg-5">
                                 <section class="panel">
                                     <h1 class="entry-title">
                                         LOGIN
@@ -95,16 +96,20 @@
                                                 <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
                                             </div>
 
-                                            <button type="submit" class="btn btn-info">LOGIN</button>
-                                            <a href="#myModal" data-toggle="modal" class="btn btn-info">
-                                                Not a Member? Sign Up
-                                            </a>
+                                            <input type="button" class="btn btn-info" onclick="login()" value="LOGIN"/>
+                                            <input type="button" class="btn btn-info" onclick="signup()" value="Not a Member? Sign Up" />
+
+                                            <div class="alert-success" id="loggedin" style="visibility: hidden; margin-top:20px ">
+                                                <strong>Logged In</strong>
+                                            </div>
+
+
                                         </form>
 
                                     </div>
                                 </section>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-5" id="signup" style="visibility: hidden">
                                 <section class="panel">
                                     <h1 class="entry-title">
                                         SIGN UP
@@ -145,5 +150,24 @@
 
 
     </div>
+
+<script>
+
+    function signup()
+    {
+        document.getElementById("signup").style.visibility="visible";
+        return false;
+    }
+
+    function login()
+    {
+        document.getElementById("login").innerHTML="LOGOUT";
+        document.getElementById("loggedin").style.visibility="visible";
+
+        return false;
+    }
+
+</script>
+
 </body>
 </html>
