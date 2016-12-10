@@ -1,2 +1,3 @@
 default_ifname = 'wlan0'
-registered_macs = '/home/pi/Desktop/Fall16-Team13/NWSense/nmap/registered_mac.txt'
+regMacs = '/home/pi/Desktop/Fall16-Team13/NWSense/regMacs.txt'
+unregMacs = '/home/pi/Desktop/Fall16-Team13/NWSense/unregMacs.txt'
