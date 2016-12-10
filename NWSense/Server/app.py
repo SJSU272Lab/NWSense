@@ -26,6 +26,7 @@ def updateFiles(fileName):
         try:
             doc = userDB[userId]
         except Exception as e:
+            print "not found id"
             print (e)
             abort(404)
 
@@ -40,7 +41,7 @@ def updateFiles(fileName):
             client.connect()
             for pi in regPis:
                 if 'type' in pi and 'id' in pi:
-                    client.publishCommand(pi['type'],pi['id'],'blockWebs','json',data = {'args':doc[fileName]})
+                    client.publishCommand(pi['type'],pi['id'],fileName,'json',data = {'args':doc[fileName]})
             client.disconnect()
             response = make_response()
             response.status_code = 202
@@ -77,9 +78,7 @@ def getAuthen():
             usr['email'] = user['authen']['email']
             usr['password'] = user['authen']['password']
             usr['id'] = user['_id']
-            print (usr)
             users['users'].append(usr)
-            print (users)
         response = make_response(str(users))
         response.status_code = 200
         return response

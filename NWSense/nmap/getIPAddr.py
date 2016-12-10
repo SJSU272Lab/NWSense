@@ -4,6 +4,7 @@ import struct
 import config
 
 default_ifname = config.default_ifname
+#default_ifname = "wlp2s0"
 
 class IFConfig():
     def __init__(self,ifname):
