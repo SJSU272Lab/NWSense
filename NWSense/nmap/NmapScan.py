@@ -15,13 +15,15 @@ gateW = ifconfig.getDefaultGW()
 pat = ""
 mask = ""
 
-if(myMask == '255.255.255.0'):
-    pat = r'(\d+\.\d+\.\d+\.)\d+'
-    mask = '0/24'
+#if(myMask == '255.255.255.0'):
+pat = r'(\d+\.\d+\.\d+\.)\d+'
+mask = '0/24'
+#else:
+#    exit(1)
 
-if (myMask == '255.255.0.0'):
-    pat = r'(\d+\.\d+\.)\d+\.\d+'
-    mask = '0.0/16'
+#if (myMask == '255.255.0.0'):
+#    pat = r'(\d+\.\d+\.)\d+\.\d+'
+#    mask = '0.0/16'
 
 r = re.search(pat,myAddr,re.I)
 
@@ -48,7 +50,8 @@ class IPScan():
         results = []
         hosts = self.nm.all_hosts()
         hosts.remove(myAddr)
-        hosts.remove(gateW)
+        if gateW in hosts:
+            hosts.remove(gateW)
         for h in hosts:
             host_mac = (h,"--:--:--:--:--:--")
             if os.getuid() == 0 and 'mac' in self.nm[h]['addresses']:
@@ -58,3 +61,8 @@ class IPScan():
 
 
 
+if __name__ == "__main__":
+    aaa = IPScan()
+    
+    print aaa.getOnlineHosts()
+    print aaa.getScanTimeSecond()

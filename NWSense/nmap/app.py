@@ -6,7 +6,8 @@ import json
 
 
 #get registered mac addresses
-registered_macs = [mac.rstrip('\n') for mac in open(config.registered_macs,'r')]
+regMacs = [mac.rstrip('\n') for mac in open(config.regMacs,'r')]
+unregMacs = [mac.rstrip('\n') for mac in open(config.unregMacs,'r')]
 
 ipScan = IPScan()
 online_hosts = ipScan.getOnlineHosts()
@@ -26,18 +27,23 @@ unregistered = []
 for host in online_hosts:
 #    h = host[0]
     m = host[1]
-    if m not in registered_macs:
-        unregistered.append(host[1])
-suspiciousMacs = {}
-suspiciousMacs["userId"] = "b539ab74bc9bc3e43a4b40040a66fa35"
-suspiciousMacs["suspiciousMacs"] = []
-for mac in unregistered:
-    m = {}
-    m["type"] = "unknown"
-    m["addr"] = str(mac)
-    suspiciousMacs["suspiciousMacs"].append(m)
-    
-if len(suspiciousMacs["suspiciousMacs"]) >0:
+    if m not in regMacs:
+        unregistered.append(m)
+
+stranger = []
+for m in unregistered:
+    if m not in unregMacs:
+        stranger.append(m)
+
+if len(stranger) >0:        
+    suspiciousMacs = {}
+    suspiciousMacs["userId"] = "b539ab74bc9bc3e43a4b40040a66fa35"
+    suspiciousMacs["suspiciousMacs"] = []
+    for mac in unregistered:
+        m = {}  
+        m["type"] = "unknown"
+        m["addr"] = str(mac)
+        suspiciousMacs["suspiciousMacs"].append(m)
     print json.dumps(suspiciousMacs)
 
 #        output.write('\t\t\t'+ h +  "\t:   " + m + '\n')
