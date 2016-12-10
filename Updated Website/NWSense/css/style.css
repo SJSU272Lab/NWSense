@@ -65,7 +65,8 @@ video {
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
-html, body {width:100%; padding:0; margin:0;}
+html, body {width:100%; padding:0; margin:0;
+ background-image: url('../images/bk.jpg');}
 
 body .wrap-body{}
 
@@ -73,7 +74,7 @@ body .wrap-body{}
 /* -------------------------------------Header--------------------------------- */
 /* ---------------------------------------------------------------------------- */
 header{margin-top: 10px;}
-header .wrap-header{background: #fff;padding: 0px 0 0;border-top: 5px solid #FFDF00;}
+header .wrap-header{background: #fff;padding: 0px 0 0;border-top: 5px solid #463faf;}
 
 @media (max-width: 767px) { 
    header{margin-top: 0;}
