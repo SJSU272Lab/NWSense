@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NWSense</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	
+    <link rel="stylesheet" href="css/zerogrid.css">
+    
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+    <script src="js/jquery1111.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index">NWSense</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="home">Home</a></li>
+											<li><a href="blockWebsite">BlockWebsite</a></li>
+                                            <li><a href="blockMac">Block a device</a></li>
+											<li><a href="#">Dashboard</a></li>
+											<li><a href="#">Contact Us</a></li>
+											<li><a href="index">Log out</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>NWSense</h2>
+							<p>Your personalised dashboard</p>
+						</header>
+						
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									 <section id="container">
+        <div class="zerogrid" style="width: 700px !important;">
+            <div class="wrap-container clearfix">
+                <div id="main-content">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>TOP APPLICATIONS</small></h2>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>TOP DEVICES</h2>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="mybarChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>DATA USAGE BY CATEGORY</h2>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+</div>
+    </section>
+								
+
+							
+
+
+								
+
+								
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+            <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='assets/js/bootstrap.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='assets/js/fastclick.js') }}"></script>
+            <script src="{{ url_for('static', filename='assets/js/nprogress.js') }}"></script>
+            <script src="{{ url_for('static', filename='assets/js/Chart.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='assets/js/custom.min.js') }}"></script>
+
+
+<!-- Chart.js -->
+<script>
+    Chart.defaults.global.legend = {
+        enabled: false
+    };
+    // Line chart
+    var ctx = document.getElementById("lineChart");
+    var mybarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["facebook.com", "stackoverflow.com", "linkedin.com", "youtube.com"],
+            datasets: [{
+                label: 'Total Usage in Kbs',
+                backgroundColor: "#455C73",
+                data: [600, 960, 1067, 450]
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    // Bar chart
+    var ctx = document.getElementById("mybarChart");
+    var mybarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["MAC1", "MAC2", "MAC3", "MAC4"],
+            datasets: [{
+                label: 'Usage in Kbs',
+                backgroundColor: "#26B99A",
+                data: [1740, 700, 1067, 1920]
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    // Pie chart
+    var ctx = document.getElementById("pieChart");
+    var data = {
+        datasets: [{
+            label:'Data usage in %',
+            data: [40,25,15,10,5],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }],
+        labels: [
+            "Social Networking Data usage in %",
+            "Search Data usage in %",
+            "E-commerce websites Data usage in %",
+            "News sites Data usage in %",
+            "Others Data usage in %"
+        ]
+    };
+    var pieChart = new Chart(ctx, {
+        data: data,
+        type: 'pie',
+        options: {
+            legend: false
+        }
+    });
+</script>
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
