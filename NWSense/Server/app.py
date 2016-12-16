@@ -1,4 +1,5 @@
 from flask import Flask,redirect, make_response, abort
+from flask import Response
 from flask import render_template
 from flask import request
 import os, json
@@ -48,21 +49,119 @@ def updateFiles(fileName):
             return response
         except ibmiotf.ConnectionException as e:
             print (e)
-        
 
+@app.route('/append/blockMacs',methods=['PUT'])
+def appendBlockMacs(): 
+    if request.method == 'PUT':
+        json_request = json.loads(request.data)
+        userId = json_request['userId']
 
-
-@app.route('/<string:fileName>/<string:userId>',methods=['GET'])
-def getBlockWebs(fileName,userId):
-    if request.method == 'GET':
-        #userId = str(userId)
-        #get blockWebs
         try:
             doc = userDB[userId]
-            blockWebs = {}
-            blockWebs[fileName] =  doc[fileName]
-            response = make_response(str(blockWebs))
-            response.status_code = 200
+        except Exception as e:
+            print "not found id"
+            print (e)
+            abort(404)
+
+        appendMacs = json_request['blockMacs']
+        blockMacs = doc['blockMacs']
+        unregMacs = doc['unregMacs']
+        for mac in appendMacs:
+            urM = [ur['addr'] for ur in unregMacs]
+            if mac in urM:
+                index = urM.index(mac)
+                transfer = unregMacs[index]
+                unregMacs.remove(transfer)
+                blockMacs.append(transfer)
+        doc['blockMacs'] = blockMacs
+        doc['unregMacs'] = unregMacs
+        doc.save()
+
+        import ibmiotf.application
+        regPis = [pi for pi in doc['regPi']]
+        try:
+            client = ibmiotf.application.Client(json.load(open("iotCred.json")))
+            client.connect()
+            for pi in regPis:
+                if 'type' in pi and 'id' in pi:
+                    client.publishCommand(pi['type'],pi['id'],'blockMacs','json',data = {'args':doc['blockMacs']})
+                    client.publishCommand(pi['type'],pi['id'],'unregMacs','json',data = {'args':doc['unregMacs']})
+            client.disconnect()
+        except ibmiotf.ConnectionException as e:
+            print (e)
+
+        if 'phoneNumber' in doc:
+            print True
+            appendMacsBody = "you have successfully BLOCK %d MAC addresses from your home network:\n"%(len(appendMacs))
+            for macAddr in appendMacs:
+                appendMacsBody += macAddr + "\n"
+            for number in doc['phoneNumber']:
+                twilioClient.sms.messages.create(to = number, from_=twilioNumber,body = appendMacsBody)
+
+        return Response(status = 202)
+
+@app.route('/append/regMacs',methods=['PUT'])
+def appendRegMacs(): 
+    if request.method == 'PUT':
+        json_request = json.loads(request.data)
+        userId = json_request['userId']
+
+        try:
+            doc = userDB[userId]
+        except Exception as e:
+            print "not found id"
+            print (e)
+            abort(404)
+
+        appendMacs = json_request['regMacs']
+        regMacs = doc['regMacs']
+        unregMacs = doc['unregMacs']
+        for mac in appendMacs:
+            urM = [ur['addr'] for ur in unregMacs]
+            if mac in urM:
+                index = urM.index(mac)
+                transfer = unregMacs[index]
+                unregMacs.remove(transfer)
+                regMacs.append(transfer)
+        doc['regMacs'] = regMacs
+        doc['unregMacs'] = unregMacs
+        doc.save()
+
+        import ibmiotf.application
+        regPis = [pi for pi in doc['regPi']]
+        try:
+            client = ibmiotf.application.Client(json.load(open("iotCred.json")))
+            client.connect()
+            for pi in regPis:
+                if 'type' in pi and 'id' in pi:
+                    client.publishCommand(pi['type'],pi['id'],'regMacs','json',data = {'args':doc['regMacs']})
+                    client.publishCommand(pi['type'],pi['id'],'unregMacs','json',data = {'args':doc['unregMacs']})
+            client.disconnect()
+        except ibmiotf.ConnectionException as e:
+            print (e)
+
+        if 'phoneNumber' in doc:
+            print True
+            appendMacsBody = "you have successfully REGISTER %d MAC addresses from your home network:\n"%(len(appendMacs))
+            for macAddr in appendMacs:
+                appendMacsBody += macAddr + "\n"
+            for number in doc['phoneNumber']:
+                twilioClient.sms.messages.create(to = number, from_=twilioNumber,body = appendMacsBody)
+
+        return Response(status = 202)
+        
+
+@app.route('/<string:fileName>/<string:userId>',methods=['GET'])
+def getFile(fileName,userId):
+    if request.method == 'GET':
+        #userId = str(userId)
+        #get File
+        try:
+            doc = userDB[userId]
+            getFile = {}
+            getFile[fileName] =  doc[fileName]
+            response = Response(response = json.dumps(getFile), status = 200, mimetype = 'application/json')
+            #response.status_code = 200
             return response
         except Exception as e:
             print (e)
@@ -79,9 +178,12 @@ def getAuthen():
             usr['password'] = user['authen']['password']
             usr['id'] = user['_id']
             users['users'].append(usr)
-        response = make_response(str(users))
-        response.status_code = 200
+        #response = make_response(str(users))
+        #response.status_code = 200
+        response = Response(response = json.dumps(users),status = 200, mimetype='application/json')
         return response
+
+
 
 @app.route('/suspiciousMacs',methods=['POST'])
 def sendNotification():
@@ -132,15 +234,9 @@ def sendNotification():
                     client.publishCommand(pi['type'],pi['id'],'unregMacs','json',data = {'args':unregMacs})
             client.disconnect()
         except ibmiotf.ConnectionException as e:
-            print (e)
+            print (e)     
 
-        
         return response
-
-
-        
-
-
 
 
 if __name__ == '__main__':
