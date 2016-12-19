@@ -18,6 +18,10 @@ Absolute locations of these two files need to be updated in file "configure.txt"
 This allows synchronization between different Pi registered under one account.
 Absolute path of these two files also need to update in two NodeRed modules - update registered Mac Addr, and update unregistered Mac Addr.
 
+- NodeRed service can update "blockMacs.txt" when there is a change from Web server.
+The file is currently in nmap folder, and an absolute location will need to be updated to NodeRed updateBlockMacAddr module.
+Squid-guard then can use this file to block a device with a Mac Addr. This feature is not currently working in our project.
+
 - all IBM IOT nodes need to have appropriate authentication (matches with IBM Iot Flatform setup) to be able to receive all update commands.
 
 - currently, no data is pushed to IBM Iot Flatform, but it can be enabled by an output IBM IoT node with proper authentication.
