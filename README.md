@@ -1,5 +1,7 @@
 # NWSense
-**NWSense** is a web app based internet security system for home networks which provides security over the whole network. It provides allows the user to monitor the network and block IP addresses or websites which are to be accessed on the network. It also allows the user to view a detailed analysis.
+![alt tag](https://github.com/SJSU272Lab/NWSense/blob/master/logo.png) **Your Personal Network security app**
+
+NWSense is a web app based internet security system for home networks which provides security over the whole network. It provides allows the user to monitor the network and block IP addresses or websites which are to be accessed on the network. It also allows the user to view a detailed analysis.
 The web app requires the user to login with the username and password. The system then fetches the IP address/MAC address of the router. This provides the user with the configuration of the system, and the feature to edit the configuration.
 After the configuration has been saved, the blocked IP addresses will not be able to access the network, and the users will not be able to surf the blocked websites.
 The user can also see and monitor what all devices are connected to the network. The user can also see a detailed analysis of what is happening inside the network, e.g., what websites are most visited, what users make the most use of network, etc.
@@ -14,7 +16,7 @@ The Rasberry-Pi will provide a wifi-end point to which other devices in the home
 The proxy server present on the Rasberry pi can be accessed from any external network.
 
 ## Architectural Flow Diagram
-![alt tag](https://raw.githubusercontent.com/SJSU272Lab/Fall16-Team13/master/ArchitecturalFlowDiagram.png)
+![alt tag](https://github.com/SJSU272Lab/NWSense/blob/master/Architecture%20Diagram.jpg)
 
 ## User Stories
 
