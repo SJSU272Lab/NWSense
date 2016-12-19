@@ -31,8 +31,8 @@
 										<ul>
 											<li><a href="home">Home</a></li>
 											<li><a href="blockWebsite">BlockWebsite</a></li>
-											<li><a href="registerMacs">Register a device</a></li>
-											<li><a href="#">Block a device</a></li>
+                                            <li><a href="#">Register a device</a></li>
+                                            <li><a href="blockMac">Block a device</a></li>
 											<li><a href="dashboard">Dashboard</a></li>
 											<li><a href="contact">Contact Us</a></li>
 											<li><a href="index">Log Out</a></li>
@@ -46,50 +46,34 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Block a Device!</h2>
-							<p>Control who is allowed to access your home network</p>
+							<h2>Register a Device!</h2>
+							<p>Let your personal devices feel at home</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-						<section>
-								<h4>Devices already blocked on your network</h4>
-								<ul>
-										 {% for l in ls %}
-                                          <li>{{l}}</li>
-                                        {% endfor %}
-											
-										
-								</ul>
-
-
-							</section>
 						
 								<section>
-									<h4>Select a Device to block </h4>
-                                 	<form method="post" action="blockMac"> 
-										<div class="row uniform">
-    
-                                            {% for mac in macList %}
-                                            <div class="6u 12u$(small)">
-                                         <input type="checkbox" id="id_{{mac}}" name="macs" value="{{mac}}">
-                                         <label for="id_{{mac}}">{{mac}}</label>
-                                            </div>
-											{% endfor %}
-											
-											<div class="12u$">
-												<ul class="actions">
-													<li><input type="submit" value="Block" class="special" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-                                                {% for m in msg %}
-                                    <h4>{{m}}</h4>
-                                        {% endfor %}
+									<h4>Register a Device</h4>
+                                  <form role="form" action="registerMacs">
 
-										</div>
-									</form> 
-                                 
+                                            <div class="form-group">
+                                                <label for="deviceMac">Mac Address</label>
+                                                <input type="text" class="form-control" id="deviceMac" placeholder="Enter MacAddress , for eg: 87:f3:65:76:dd" required="true" name="deviceMac">
+                                            </div>
+                                            
+                                           <p></p>
+									
+                                          <div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Register" class="special" /></li>
+													
+												</ul>
+                                                 <a href="https://www.youtube.com/watch?v=yWcopmxTuyc" data-toggle="modal" class="btn btn-info">
+                                                Dont know your device MacAddress? Let us help you.
+                                            </a>
+											</div>
+                                        </form>
 								</section>
 
 							

@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Elements - Spectral by HTML5 UP</title>
+		<title>NwSense</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -31,9 +31,10 @@
 										<ul>
 											<li><a href="home">Home</a></li>
 											<li><a href="#">BlockWebsite</a></li>
+											<li><a href="registerMacs">Register a device</a></li>
 											<li><a href="blockMac">Block a device</a></li>
 											<li><a href="dashboard">Dashboard</a></li>
-											<li><a href="#">Contact Us</a></li>
+											<li><a href="contact">Contact Us</a></li>
 											<li><a href="index">Log Out</a></li>
 										</ul>
 									</div>
@@ -50,7 +51,18 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
+							<section>
+								<h4>Websites blocked on your network</h4>
+								<ul>
+										 {% for l in ls %}
+                                          <li>{{l}}</li>
+                                        {% endfor %}
+											
+										
+								</ul>
 
+
+							</section>
 						
 								<section>
 									<h4>Block websites</h4>
@@ -100,10 +112,16 @@
 					</article>
 
 				<!-- Footer -->
-					<footer id="footer">
-						
+						<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
 						<ul class="copyright">
-							<li>&copy; Team 13</li>NWsense<li></li>
+								<li>&copy; NwSense</li><li>Designed by: Team 13</li>
 						</ul>
 					</footer>
 

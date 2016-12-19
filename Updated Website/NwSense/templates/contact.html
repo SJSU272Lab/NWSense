@@ -11,7 +11,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 			<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
-	
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -24,82 +23,74 @@
 					<header id="header">
 						<h1><a href="index">NWSense</a></h1>
 						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="home">Home</a></li>
-											<li><a href="blockWebsite">BlockWebsite</a></li>
-											<li><a href="registerMacs">Register a device</a></li>
-											<li><a href="#">Block a device</a></li>
-											<li><a href="dashboard">Dashboard</a></li>
-											<li><a href="contact">Contact Us</a></li>
-											<li><a href="index">Log Out</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
+							
 						</nav>
 					</header>
 
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Block a Device!</h2>
-							<p>Control who is allowed to access your home network</p>
+							<h2>NWSense</h2>
+							<p>Wanna join our secure community?</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-						<section>
-								<h4>Devices already blocked on your network</h4>
-								<ul>
-										 {% for l in ls %}
-                                          <li>{{l}}</li>
-                                        {% endfor %}
-											
-										
-								</ul>
-
-
-							</section>
-						
 								<section>
-									<h4>Select a Device to block </h4>
-                                 	<form method="post" action="blockMac"> 
-										<div class="row uniform">
-    
-                                            {% for mac in macList %}
-                                            <div class="6u 12u$(small)">
-                                         <input type="checkbox" id="id_{{mac}}" name="macs" value="{{mac}}">
-                                         <label for="id_{{mac}}">{{mac}}</label>
-                                            </div>
-											{% endfor %}
+									<h4>Buy our solution</h4>
+									<p>We bring you the best in industry  <b>network security solution</b> for your home network.
+                                     A little device will give you the power to control your home network from anywhere in the world.
+
+								</section>	
+								
+
+								<section>
+									<h4>Look for the best plan</h4>
+									
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Plan Type</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Premium</td>
+													<td>With 24 months subscription and dedicated device</td>
+													<td>129.99$</td>
+												</tr>
+												<tr>
+													<td>Standard</td>
+													<td>With 15 months subscription and dedicated device</td>
+													<td>99.99$</td>
+												</tr>
+												<tr>
+													<td>Basic</td>
+													<td> With 12 months subscription and dedicated device</td>
+													<td>50.99$</td>
+												</tr>
+												
+											</tbody>
 											
-											<div class="12u$">
-												<ul class="actions">
-													<li><input type="submit" value="Block" class="special" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-                                                {% for m in msg %}
-                                    <h4>{{m}}</h4>
-                                        {% endfor %}
+										</table>
+									</div>		
 
-										</div>
-									</form> 
-                                 
-								</section>
-
-							
-						
 							</div>
+                             <section>
+									<h4>Give us a call if interested or need assistance</h4>
+									<h3>ph:656-276-7854</h3>
+                                   <h4>Email us: contact@nwense.com</h4>
+								
+								</section>
 						</section>
+                       
 					</article>
 
 				<!-- Footer -->
-						<footer id="footer">
+					<footer id="footer">
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -123,7 +114,6 @@
 			
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
-		
 
 	</body>
 </html>
