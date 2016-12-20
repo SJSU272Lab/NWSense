@@ -39,3 +39,6 @@ Access our website at : http://ec2-54-165-49-28.compute-1.amazonaws.com/index
 
 Contact us :
 Seema Rohilla : https://github.com/srohilla
+Shruti Loya : https://github.com/Shrutiloya
+Amay Dubey : https://github.com/amaydubey
+Khoa le : https://github.com/khoale88
